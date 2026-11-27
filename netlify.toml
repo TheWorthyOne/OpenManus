@@ -1,6 +1,8 @@
 [build]
+base = "deploy"
 publish = "dist"
-command = "npm run build"
+command = "node stage-site.cjs"
+ignore = "false"
 
 [[redirects]]
 from = "/*"

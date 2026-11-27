@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx serve -s . -p 3000",
-    "build": "echo 'Static PWA - no build needed'",
+    "build": "node deploy/stage-site.cjs",
     "start": "npx serve -s . -p 3000"
   },
   "keywords": [
