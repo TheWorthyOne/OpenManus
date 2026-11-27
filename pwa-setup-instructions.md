@@ -98,6 +98,10 @@ Options in manifest.json:
 
 ## Deployment Checklist
 
+Netlify stages the PWA in `deploy/dist` without installing the repository's Python
+dependencies. Run `npm run build` to stage the same files locally. The site
+sources remain at the repository root, so changes there still trigger deploys.
+
 - [ ] All icon sizes generated and placed in /icons directory
 - [ ] Manifest.json customized with your app details
 - [ ] Service worker registered and tested
